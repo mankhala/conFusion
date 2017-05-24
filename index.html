@@ -281,9 +281,19 @@
                         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
+                    <!-- Carousal buttons start -->
+                    <div class="btn-group" id="carouselButtons">
+                        <button class="btn btn-danger btn-sm" id="carousel-pause">
+                            <span class="fa fa-pause" aria-hidden="true"></span>
+                        </button>
+                        <button class="btn btn-danger btn-sm" id="carousel-play">
+                            <span class="fa fa-play" aria-hidden="true"></span>
+                        </button>
+                    </div>
+                    <!-- Carousal buttons start -->
                 </div>
            </div>
-       </div>
+        </div>
     <!-- Carousal end -->
         <div class="row row-content">
             <div class="col-xs-12 col-sm-3 col-sm-push-9">
@@ -514,6 +524,17 @@
         $(document).ready(function(){
         $('[data-toggle="tooltip"]').tooltip();
          });
+    </script>
+    <script>
+        $(document).ready(function(){
+            $("#mycarousel").carousel( { interval: 2000 } );
+                          $("#carousel-pause").click(function(){
+                $("#mycarousel").carousel('pause');
+            });
+                        $("#carousel-play").click(function(){
+                $("#mycarousel").carousel('cycle');
+            });
+        });
     </script>
 </body>
 
