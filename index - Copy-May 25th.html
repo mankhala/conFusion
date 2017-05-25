@@ -57,17 +57,9 @@
                 </ul>
                 <!-- Model -->
                 <ul class="nav navbar-nav navbar-right">
-                    <!-- Assignment 4 Start -->
-                    
-                    <!--<li><a data-toggle="modal" data-target="#loginModal">
+                    <li><a data-toggle="modal" data-target="#loginModal">
                         <span class="glyphicon glyphicon-log-in"></span> Login</a>
-                    </li> -->
-                    
-                    <li><a id="login" href="#">
-                    <span class="glyphicon glyphicon-log-in"></span> Login</a>
                     </li>
-                    
-                    <!-- Assignment 4 End  -->
                 </ul>
                 <!-- Model End -->
                    <!-- Assignment 2 -->
@@ -210,11 +202,10 @@
                 <!-- Assignment 3  -->
                  <div class="col-xs-12 col-sm-2">
                     <p style="padding:20px;margin-top:40px"></p>
-                     <!-- Assignment 4 Start -->
-                    <!-- <a type="button" class="btn btn-warning btn-block" data-toggle="modal" data-target="#reservationModal" data-placement="bottom" href="#reserveTable">Reserve Table</a> -->
-                     <a type="button" class="btn btn-warning btn-block" id="reserve" href="#">Reserve Table</a>
-                     
-                     <!-- Assignment 4 End -->
+                    <a type="button" class="btn btn-warning btn-block"
+                       data-toggle="modal" data-target="#reservationModal"
+                       data-placement="bottom" href="#reserveTable">
+                        Reserve Table</a>
                  </div>
                  <!-- Assignment 3 End -->
                  <!-- Assignment 2 -->
@@ -547,15 +538,6 @@
                         $("#carousel-play").click(function(){
                 $("#mycarousel").carousel('cycle');
             });
-            <!-- Assignment 4 Start -->
-            $("#login").click(function (){
-                
-                $("#loginModal").modal('toggle');
-            });
-            $("#reserve").click(function (){
-                $("#reservationModal").modal('toggle');
-            });
-            <!-- Assignment 4 End -->
         });
     </script>
 </body>
